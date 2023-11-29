@@ -1,0 +1,56 @@
+/* Popup.css */
+.popup-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  }
+
+  .popup-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    width: 80%; 
+    max-width: 600px; 
+    text-align: center;
+}
+  
+  .popup-header {
+    margin-bottom: 20px;
+  }
+  
+  .close-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .popup-content p {
+    margin: 20px 0;
+  }
+
+  .popup-footer {
+    text-align: right;
+  }
+  
+  .home-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px; 
+}

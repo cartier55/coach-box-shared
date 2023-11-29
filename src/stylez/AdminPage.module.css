@@ -1,0 +1,57 @@
+/* AdminPage.module.css */
+.adminPageContainer {
+  /* margin-left: 250px; Adjust based on your actual sidebar width */
+  padding: 20px;
+  background: #f4f7f6; /* Slightly off-white background like in the design */
+  min-height: 100vh; /* Full height */
+}
+
+.userTable {
+  max-width: 600px; /* Assuming the table width */
+  margin: auto;
+}
+
+.userRow {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  width: 85%;
+}
+
+.userRow:hover {
+  transform: translateY(-5px);
+}
+
+.profilePicPlaceholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px; /* Adjust this to control the spacing */
+}
+
+.userName {
+  flex-grow: 1;
+  font-size: 18px;
+  color: #333;
+  margin-right: 10px; /* Add a right margin to push icons closer */
+}
+
+.userStatus {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.userStatus > * {
+  margin-left: 10px; /* Space out icons */
+}

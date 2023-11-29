@@ -1,0 +1,82 @@
+.next-shift-notification {
+  position: absolute !important;
+  /* top: 170px; */
+  /* right: 10px; */
+  right: 50%;
+  width: 100%;
+  padding: 0px 11px !important;
+  background-color: #0B57A3;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  transform: translateX(50%);
+  cursor: pointer;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.4), 
+              0 15px 45px 5px rgba(0, 0, 0, 0.3);
+}
+ 
+.next-shift-notification p{
+  margin-bottom: 0px !important;
+  transition: padding 0.3s ease-in-out;
+
+ }
+
+.shift-notification-container {
+  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px 0;
+
+  /* padding-top: 70px; */
+  position: relative;
+}
+
+
+.next-shift-notification:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* slightly pronounced shadow on hover */
+}
+
+.next-shift-notification:active {
+  transform: scale(0.95); /* pressing effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* reduced shadow to simulate pressing */
+}
+
+.next-shift-notification .dumbbell-icon {
+  margin-right: 10px;
+}
+
+.next-shift-notification .next-shift-text {
+  text-align: center;
+  margin-bottom: 5px; /* Optional - if you want spacing between date and dropdown */
+}
+
+.dropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  /* background-color: #007bff; */
+  color: #fff;
+  padding: 0 15px;
+  width: 100%; /* Make the dropdown span the full width of the parent container */
+}
+
+.dropdown.open {
+  max-height: 100px;
+}
+
+.dropdown p {
+  text-align: center;
+  border-bottom: 1px solid #fff; /* Adding a divider */
+  margin: 5px 0; /* Some vertical spacing */
+}
+
+.dropdown p:last-child {
+  border-bottom: none; /* Remove the divider from the last element */
+}

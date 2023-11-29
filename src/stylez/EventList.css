@@ -1,0 +1,55 @@
+.event-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center cards horizontally */
+    /* gap: 20px; /* space between cards */
+    /* padding: 20px 0; padding top and bottom of the list */
+}
+  
+.event-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 10px; */
+    padding-left: 10px;      
+    padding-right: 10px;
+    height: 50px;
+    background: linear-gradient(to bottom, #f7f8fa, #e7e9ec); /* subtle gradient background */
+    border-radius: 20px; /* rounded corners */
+    box-shadow: 5px 5px 15px #aaa, -5px -5px 15px #fff; /* Shadow effect for 3D look */
+    width: 90%; /* width less than 100% of the container for space on the sides */
+    margin: 0 auto; /* center the card horizontally */
+    margin-bottom: 10px; /* space between cards */
+}
+.event-card h3 {
+    margin-top: 0; /* remove default margin for clean layout */
+    font-size: 1.2em; /* Increase font size for title */
+    line-height: 14px;
+    margin-right: 15px; /* Adds some space between title and time */
+}
+
+.event-card p {
+    font-size: 0.9em; /* Smaller font for event details */
+    margin-top: auto;
+    margin-bottom: 3px;
+    margin-left: auto;
+}
+
+.card-icon {
+    margin-right: 7px;    
+    font-size: 1.2em;
+    color: #333;
+}
+
+.divider {
+    height: 60%;             
+    width: 1px;              
+    background-color: #000; 
+    margin-right: 10px;      
+}
+
+.event-content {
+    flex-grow: 1; 
+    display: flex; /* Change to flex to have text side by side */
+    align-items: center; /* Vertically center the content */          
+}

@@ -1,0 +1,30 @@
+.day-worked-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.divider {
+  border-left: 1px solid #ccc;
+  height: 40px;
+  margin: 0 8px;
+}
+
+.hours-content h3,
+.hours-content p {
+  margin: 0;
+}
+
+.pay-period {
+  margin-left: auto;
+  font-size: 20px; /* This is slightly larger than the hours worked but smaller than the date */
+}

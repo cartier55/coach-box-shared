@@ -1,0 +1,81 @@
+.comment-card {
+  background-color: white;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex; /* Add flex display */
+  align-items: center; /* Align items in the center vertically */
+  justify-content: space-between;
+
+}
+  
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.comment-info {
+  margin-left: 10px;
+  display: flex; /* Make this also flex */
+  flex-direction: column; /* Stack children vertically */
+  flex-grow: 1; /* Allow it to take up available space */
+}
+  
+.user-name, .comment-text {
+  margin: 0;
+}
+
+.user-name {
+  font-size: 12px;
+  color: #555;
+}
+
+.three-dot-menu {
+  font-size: 24px;
+  cursor: pointer;
+  /* padding: 0 10px; */
+  flex-shrink: 0;
+}
+
+.menu-container {
+  position: relative; /* This will ensure the dropdown is relative to the three-dot button */
+  margin-left: auto; /* Pushes the menu to the rightmost of its parent container */
+}
+
+.three-dot-menu {
+  font-size: 20px;
+  cursor: pointer; /* To show the clickable hand icon */
+}
+
+.dropdown-menu {
+  display: block !important;
+  position: absolute; /* To position it relative to the parent (menu-container) */
+  right: 0; /* Aligns to the right of the menu-container */
+  top: 100%; /* Places the dropdown right below the three-dot menu */
+  z-index: 10; /* Places it above other elements */
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Makes sure border radius applies to children elements */
+  width: 150px; /* Optional, set a fixed width for dropdown */
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f2f2f2;
+}
+
+.comment-card-deleting {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+

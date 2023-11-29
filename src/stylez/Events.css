@@ -1,0 +1,46 @@
+.rbc-event {
+    border: none;
+    box-shadow: none;
+    margin: 2px auto;
+    padding: 0;
+    background-color: #CCCCCC;
+    border-radius: 50%; /* Makes it round */
+    width: 10px; /* Width of the dot */
+    height: 10px; /* Height of the dot */
+    cursor: pointer;
+    position: relative;
+    top: calc(50% - 5px); /* Vertically centers the dot in the day cell */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+
+    &:focus {
+      outline: none;
+    }
+  
+    /* Hide additional event dots if more than 1 event
+    &:not(:first-child) {
+      display: none !important
+    } */
+  }
+  
+  
+.rbc-date-cell{
+    text-align: center;
+}
+
+.rbc-now{
+    color:red
+}
+
+.rbc-calendar{
+  height: 80% !important;
+  margin-left: 5px;
+}
+/* $event-bg: ; You can adjust the gray color as needed */
+
+div.rbc-row-segment > button{
+  display: none !important;
+}
+
+div.rbc-row-content > .rbc-row:nth-child(3) {
+  display: none;
+}

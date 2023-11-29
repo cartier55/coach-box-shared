@@ -1,0 +1,131 @@
+
+.comments-button {
+  display: block;      /* Makes the button a block-level element. */
+  width: 100%;         /* Sets the button width to 100% of its parent container. */
+  margin: 20px 0;      /* Adds a top and bottom margin for spacing. */
+  text-align: center;  /* Center the text inside the button. */
+  background-color: #0B57A3 !important;
+}
+
+.coach-comments-section {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: bottom 0.5s ease-in-out;
+  z-index: 999;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 9999;
+  transition: all 0.3s ease-out; 
+  transform: translateY(100%);  /* Starts hidden below the screen */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Ensure max space between comments and the input area */
+  /* position: relative; To position children absolutely inside */
+
+}
+
+.comment-container{
+  height: 80%;
+}
+
+.comments{
+  background-color: white;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll; /* Make sure the comments section is scrollable */
+  scrollbar-width: none; /* For Firefox: Hide the scrollbar */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge: Hide the scrollbar */
+  height: 75%; /* Set a fixed height, adjust this percentage as needed */
+
+}
+
+.recent-comments-container{
+  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  margin-top: 40px;
+  /* padding-top: 70px; */
+  position: relative;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.4), 
+              0 15px 45px 5px rgba(0, 0, 0, 0.3);
+  
+}
+
+.recent-comments-container {
+  background-color: #e5e5e5; /* Just a placeholder background, change if needed */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Assuming the CommentCard component might be wrapped inside a div */
+.recent-comments-container div {
+  background-color: white;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.coach-comments-section.open {
+  bottom: 0;
+  transform: translateY(0);  /* Slides up */
+}
+
+.comments {
+  max-height: 80%;
+  overflow-y: auto;
+  background-color: #e5e5e5; /* Just a placeholder background, change if needed */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.comment {
+  background: #f1f1f1;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.comments::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and newer versions of Opera: Hide the scrollbar */
+}
+
+/* Adjustments to move the input field and button to the bottom */
+/* Form.Group, .coach-comments-section Button {
+  margin-top: 10px;
+} */
+
+.new-comment-notification {
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  padding: 10px 20px;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.new-comment-notification:hover {
+  transform: scale(1.05);
+}

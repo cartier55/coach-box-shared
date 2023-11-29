@@ -1,0 +1,49 @@
+.daily-coach-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding-top: 70px;
+  position: relative;
+}
+
+.daily-coach-video::after {  /* Divider after the video section */
+  content: '';
+  width: 80%;  /* adjust width as needed */
+  height: 2px;
+  background: #ccc;  /* color of the divider */
+  position: absolute;
+  bottom: -1px;  /* Adjust this distance to position the divider correctly */
+  left: 10%;  /* centers the divider */
+}
+
+.daily-coach-video h2 {
+  margin-bottom: 10px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  padding-bottom: 25.25%; 
+  max-height: 540px; 
+  height: 216px; 
+  min-height: 170px;
+  overflow: hidden;
+  border-radius: 15px;  /* Rounded edges */
+  border: 0px solid #f0f0f0;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.4), 
+              0 15px 45px 5px rgba(0, 0, 0, 0.3);
+  background-color: #e9e9e9;  /* A light background color to aid the sunken effect */
+  margin-bottom: 30px;  /* Adding a margin to create space */
+
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;  /* Slightly less than the container to ensure it is contained within */
+}
